@@ -1,0 +1,3 @@
+packages:
+  uhd:
+    forcebuild: True
