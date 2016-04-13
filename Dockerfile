@@ -14,7 +14,7 @@ RUN git clone --recursive https://github.com/gnuradio/pybombs.git && \
 COPY config_packages.yml /
 
 RUN apt-get update && \
-    pybombs recipes add gr-recipes git+https://github.com/namccart/gr-recipes.git && \
+    pybombs recipes add gr-recipes git+https://github.com/gnuradio/gr-recipes.git && \
     pybombs prefix init /gnuradio-prefix -a target && \
     cat /config_packages.yml >> ~/.pybombs/config.yml && \
     pybombs -p target install gnuradio && \
